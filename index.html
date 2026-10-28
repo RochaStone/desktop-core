@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>desktop</title>
+<meta name="generator" content="desktop-core (Rocha Coded)">
+<script type="application/json" id="desktop-config">{"name":"Juniper Lark","tagline":"Brand photography for ceramicists and small-batch makers. A fictional studio, for show.","mood":"glazing, quietly","motif":"y2k-blog","counter":777,"folders":[{"name":"LORE","blurb":"The story so far. Kilns, light, and the long way round.","url":"https://example.com/lore","cta":"read the lore"},{"name":"The Shoot Day","blurb":"One day in your studio. Forty finished images by the end of the week.","items":["half or full day","styling included","40 edited images"],"url":"https://example.com/shoot-day","cta":"see the day"},{"name":"Mini Sessions","blurb":"Twenty minutes, one collection, a little stack of new photos.","url":"https://example.com/minis","cta":"save a spot"},{"name":"Brand Library","blurb":"A year of pictures for your shop, your posts and your press page.","url":"https://example.com/library","cta":"open the library"}],"notes":[{"text":"TO DO: BUILD YOUR FOUNDER WORLD"},{"text":"My mugs finally look the way they feel in your hand.","from":"Odile, fictional potter"},{"text":"Sold out the spring drop in two days.","from":"Bram, fictional glassblower"},{"text":"She made my tiny studio look like a cathedral.","from":"Mei, fictional weaver"}],"clock":{"label":"book a call","url":"https://example.com/book"},"trash":["shooting on white for everyone","the 6am inbox","saying yes to weddings","apologising for my prices"],"currently":{"reading":"a book about kilns","listening":"rain on the studio roof","building":"the autumn lookbook"},"links":[{"label":"instagram","url":"https://example.com/instagram"},{"label":"newsletter","url":"https://example.com/letters"},{"label":"shop prints","url":"https://example.com/prints"}],"guestbookUrl":"https://example.com/guestbook"}</script>
+<script type="application/json" id="desktop-style">{"palette":{"hero":"#50163C","accent":"#FE9DCA","paper":"#FFF7F4","paper_pink":"#FFE3F1","ink":"#3B1230","marker":"#C2246E","plum":"#50163C","wine":"#682047","gold":"#E9B949","cool":"#B9B3F5"},"fonts":{"masthead":"Fraunces","label":"Bricolage Grotesque","body":"Fraunces","scrawl":"Permanent Marker","script":"Pinyon Script","mono":"DM Mono"},"lines":{"stamp":"LORE"}}</script>
+<script type="application/json" id="desktop-meta">{"motif":"y2k-blog"}</script>
+<style>
+:root{--ground:#50163C;--wine:#682047;--candy:#FE9DCA;--cream:#FFF7F4;--blush:#FFE3F1;--ink:#3B1230;--marker:#C2246E;--plum:#50163C;--gold:#E9B949;
+--display:"Fraunces",Georgia,serif;--label:"Bricolage Grotesque",system-ui,Arial,sans-serif;--body:"Fraunces",Georgia,serif;--scrawl:"Permanent Marker","Marker Felt",cursive;--script:"Pinyon Script",cursive;--mono:"DM Mono",ui-monospace,Menlo,monospace;--pixel:"Silkscreen",ui-monospace,monospace;--shadow:0 6px 18px rgba(30,10,25,.28)}
+*{box-sizing:border-box}html,body{margin:0}
+body{min-height:100vh;display:grid;grid-template-rows:auto 1fr auto;grid-template-columns:minmax(0,1fr);font-family:var(--label);color:var(--ink);background:var(--ground);overflow-x:hidden}
+a{color:inherit}button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.menubar,.taskbar{display:flex;align-items:center;gap:12px;padding:6px 14px;min-width:0;flex-wrap:wrap;position:relative;z-index:900}
+.menubar .who{font-weight:800;white-space:nowrap;background:none;border:0;padding:0;cursor:pointer}.menubar .time{margin-left:auto;font-family:var(--mono);font-size:13px}
+.marquee{flex:1 1 120px;min-width:0;overflow:hidden;white-space:nowrap;font-family:var(--mono);font-size:13px}
+.marquee span{display:inline-block;padding-left:100%;animation:mq 22s linear infinite}
+@keyframes mq{to{transform:translateX(-100%)}}
+.desk{position:relative;overflow:hidden;min-height:720px;height:calc(100vh - 76px)}
+.wall{position:absolute;inset:0;z-index:0}
+.stamp{position:absolute;left:44%;bottom:40px;z-index:1;font-family:var(--display);font-weight:900;font-size:64px;letter-spacing:.06em;color:var(--marker);border:5px solid currentColor;padding:2px 18px;transform:rotate(-8deg);opacity:.35;pointer-events:none}
+.icons{position:absolute;left:14px;top:14px;bottom:14px;z-index:3;display:flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;gap:10px;margin:0;padding:0;list-style:none}
+.icon{width:96px;min-height:88px;display:flex;flex-direction:column;align-items:center;gap:6px;background:none;border:0;cursor:pointer;padding:4px;text-align:center}
+.icon .label{font-size:12px;font-weight:800;line-height:1.2;padding:1px 4px;overflow-wrap:anywhere}
+.glyph{width:46px;height:38px;position:relative;display:block}
+.glyph.folder{background:var(--gold);border:2px solid var(--ink);border-radius:2px 4px 3px 3px}
+.glyph.folder::before{content:"";position:absolute;left:-2px;top:-9px;width:20px;height:8px;background:var(--gold);border:2px solid var(--ink);border-bottom:0;border-radius:3px 3px 0 0}
+.glyph.trash{width:34px;height:42px;background:var(--cream);border:2px solid var(--ink);border-radius:0 0 5px 5px;background-image:repeating-linear-gradient(90deg,transparent 0 7px,var(--ink) 7px 9px)}
+.glyph.trash::before{content:"";position:absolute;left:-6px;right:-6px;top:-8px;height:6px;background:var(--cream);border:2px solid var(--ink)}
+.glyph.page{width:34px;height:42px;background:var(--cream);border:2px solid var(--ink);background-image:repeating-linear-gradient(transparent 0 7px,var(--candy) 7px 8px)}
+.glyph.book{width:40px;height:40px;background:var(--candy);border:2px solid var(--ink);border-radius:3px}
+.glyph.book::after{content:"";position:absolute;left:8px;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+.trash-slot{position:absolute;right:20px;bottom:16px;z-index:3}
+.clock{position:absolute;right:24px;top:16px;z-index:2;width:190px;text-align:center;padding:12px;background:var(--cream);border:2px solid var(--ink);box-shadow:var(--shadow)}
+.face{width:96px;height:96px;margin:0 auto 8px;border-radius:50%;border:3px solid var(--ink);position:relative;background:var(--blush)}
+.hand{position:absolute;left:50%;bottom:50%;width:3px;background:var(--ink);transform-origin:50% 100%;border-radius:2px}
+.hand.h{height:26px;margin-left:-1.5px}.hand.m{height:38px;width:2px;margin-left:-1px}
+.digits{font-family:var(--mono);font-size:22px;display:block}
+.btn{display:inline-block;margin-top:8px;padding:6px 12px;font-weight:800;text-decoration:none;background:var(--candy);color:var(--ink);border:2px solid var(--ink);border-radius:999px}
+.notes{position:absolute;right:20px;top:220px;z-index:2;width:300px;display:flex;flex-wrap:wrap;gap:14px;margin:0}
+.note{width:140px;min-height:120px;margin:0;padding:12px 10px;background:var(--blush);color:var(--ink);box-shadow:var(--shadow);font-family:var(--scrawl);font-size:15px;line-height:1.25;overflow-wrap:anywhere}
+.note:nth-child(odd){transform:rotate(-2.5deg)}.note:nth-child(even){transform:rotate(2deg);background:var(--cream)}
+.note blockquote{margin:0}.note figcaption{margin-top:8px;font-family:var(--mono);font-size:11px}
+.windows{position:absolute;inset:0;z-index:10;pointer-events:none}
+.win{position:absolute;width:400px;max-width:calc(100% - 16px);pointer-events:auto;background:var(--cream);color:var(--ink);border:2px solid var(--ink);box-shadow:var(--shadow)}
+.win[hidden]{display:none}
+.bar{display:flex;align-items:center;gap:8px;padding:5px 8px;cursor:grab;user-select:none;touch-action:none}
+.bar:active{cursor:grabbing}
+.bar h2{flex:1;margin:0;font-size:13px;font-weight:800;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.x{width:22px;height:22px;padding:0;border:2px solid currentColor;background:none;cursor:pointer;line-height:1;font-weight:800}
+.wbody{padding:14px 16px 16px;font-family:var(--body);font-size:16px;line-height:1.45;overflow-wrap:anywhere;max-height:60vh;overflow-y:auto}
+.wbody h1{font-family:var(--display);font-weight:900;font-size:40px;line-height:1;margin:0 0 8px}
+.wbody p{margin:0 0 10px}.wbody ul{margin:0 0 10px;padding-left:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 0}
+.chips a{display:inline-block;padding:4px 10px;border:2px solid var(--ink);border-radius:999px;text-decoration:none;font-family:var(--label);font-weight:800;font-size:13px;background:var(--blush)}
+.mood{font-family:var(--mono);font-size:13px}
+dl.now{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0}dl.now dt{font-family:var(--mono);font-size:13px}dl.now dd{margin:0}
+.let-go li{text-decoration:line-through;text-decoration-color:var(--marker)}
+.taskbar{font-size:12px}.taskbar .counter{font-family:var(--mono);padding:2px 8px;background:var(--ink);color:var(--cream)}
+.taskbar .updated{font-family:var(--mono)}.taskbar .credit{margin-left:auto}
+.oops{margin:24px;padding:16px;background:var(--cream);border:2px solid var(--marker);font-family:var(--mono);position:relative;z-index:999}
+/* ---------- y2k-blog: the 2003 OS 9 desktop ---------- */
+.m-y2k-blog .menubar,.m-y2k-blog .taskbar{background:var(--cream);border-bottom:2px solid var(--ink)}
+.m-y2k-blog .taskbar{border-top:2px solid var(--ink);border-bottom:0}
+.m-y2k-blog .wall{background-color:var(--blush);background-image:radial-gradient(var(--candy) 2px,transparent 2.5px),radial-gradient(var(--gold) 1.5px,transparent 2px);background-size:28px 28px,28px 28px;background-position:0 0,14px 14px}
+.m-y2k-blog .icon .label{background:var(--cream);border:1px solid var(--ink)}
+.m-y2k-blog .bar{background:repeating-linear-gradient(var(--plum) 0 2px,var(--wine) 2px 4px);color:var(--cream)}
+.m-y2k-blog .bar h2,.m-y2k-blog .menubar .who,.m-y2k-blog .clock .lbl{font-family:var(--pixel);font-weight:400;letter-spacing:.04em}
+.m-y2k-blog .lights{display:flex;gap:4px}.m-y2k-blog .lights i{width:12px;height:12px;background:var(--gold);border:1px solid var(--ink)}
+.m-y2k-blog .x{border-color:var(--gold);color:var(--gold)}
+.m-y2k-blog .win{border:2px solid var(--ink);box-shadow:inset -2px -2px 0 rgba(59,18,48,.18),var(--shadow)}
+.pix{display:inline-block;vertical-align:middle;color:var(--gold)}
+/* ---------- cyberpunk: the plum CRT, pixel chrome ---------- */
+.m-cyberpunk{background:var(--plum)}
+.m-cyberpunk .menubar,.m-cyberpunk .taskbar{background:var(--ink);color:var(--cream);font-family:var(--pixel)}
+.m-cyberpunk .wall{background-color:var(--plum);background-image:repeating-linear-gradient(rgba(255,247,244,.05) 0 1px,transparent 1px 4px),linear-gradient(90deg,rgba(233,185,73,.08) 1px,transparent 1px);background-size:auto,48px 48px}
+.m-cyberpunk .icon .label{font-family:var(--pixel);font-weight:400;color:var(--cream);font-size:11px}
+.m-cyberpunk .glyph.folder,.m-cyberpunk .glyph.folder::before{background:var(--candy);border-radius:0}
+.m-cyberpunk .win{background:var(--ink);color:var(--cream);border:10px solid var(--wine);outline:2px solid var(--gold);box-shadow:var(--shadow)}
+.m-cyberpunk .win::before,.m-cyberpunk .win::after{content:"";position:absolute;top:-7px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.m-cyberpunk .win::before{left:-7px}.m-cyberpunk .win::after{right:-7px}
+.m-cyberpunk .bar{background:var(--wine);color:var(--cream)}
+.m-cyberpunk .bar h2{font-family:var(--pixel);font-weight:400;text-align:left}
+.m-cyberpunk .leds{display:flex;gap:5px}.m-cyberpunk .leds i{width:8px;height:8px;border-radius:50%;background:var(--candy)}.m-cyberpunk .leds i+i{background:var(--gold)}
+.m-cyberpunk .wbody{font-family:var(--mono);font-size:14px}
+.m-cyberpunk .wbody h1{font-family:var(--pixel);font-weight:700;font-size:30px;color:var(--candy)}
+.prompt{margin:0;padding:8px 16px 0;font-family:var(--mono);font-size:13px;color:var(--gold)}
+.cursor{display:inline-block;width:.6em;height:1em;vertical-align:-2px;margin-left:4px;background:var(--candy);animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.m-cyberpunk .chips a{background:transparent;color:var(--candy);border-color:var(--candy);border-radius:0;font-family:var(--pixel);font-weight:400}
+.m-cyberpunk .clock{background:var(--ink);color:var(--cream);border:6px solid var(--wine);outline:2px solid var(--gold)}
+.m-cyberpunk .face{display:none}.m-cyberpunk .digits{font-family:var(--pixel);font-size:30px;color:var(--candy)}
+.m-cyberpunk .note{background:var(--cream);font-family:var(--mono);font-size:13px;border:2px solid var(--candy);transform:none}
+.m-cyberpunk .stamp{color:var(--gold);font-family:var(--pixel);opacity:.25}
+.m-cyberpunk .btn{border-radius:0;font-family:var(--pixel);font-weight:400}
+/* ---------- analog: a paper desk with polaroids and tape ---------- */
+.m-analog .menubar,.m-analog .taskbar{background:var(--wine);color:var(--cream)}
+.m-analog .wall{background-color:var(--cream);background-image:radial-gradient(circle at 78% 82%,transparent 54px,rgba(104,32,71,.13) 55px,rgba(104,32,71,.06) 60px,transparent 62px),repeating-linear-gradient(33deg,rgba(59,18,48,.025) 0 2px,transparent 2px 7px),repeating-linear-gradient(-58deg,rgba(59,18,48,.02) 0 1px,transparent 1px 5px)}
+.m-analog .icon{background:var(--cream);border:2px solid var(--plum);padding:6px 6px 4px;box-shadow:var(--shadow)}
+.m-analog .icon:nth-child(odd){transform:rotate(-2deg)}.m-analog .icon:nth-child(even){transform:rotate(1.5deg)}
+.m-analog .glyph{width:70px;height:52px;background:var(--wine);border:0;border-radius:0;background-image:none}
+.m-analog .glyph::before,.m-analog .glyph::after{display:none}
+.m-analog .icon .label{font-family:var(--scrawl);font-weight:400;font-size:13px;color:var(--ink)}
+.m-analog .trash-slot .icon{transform:rotate(-4deg)}
+.m-analog .win{border:0;transform:rotate(-.6deg);background:var(--cream);background-image:repeating-linear-gradient(transparent 0 27px,rgba(194,36,110,.16) 27px 28px)}
+.m-analog .win:nth-of-type(even){transform:rotate(.7deg)}
+.tape{position:absolute;top:-12px;width:84px;height:24px;background:var(--candy);opacity:.75;z-index:2}
+.tape.l{left:18px;transform:rotate(-6deg)}.tape.r{right:18px;transform:rotate(5deg)}
+.m-analog .bar{padding-top:16px;color:var(--wine)}
+.m-analog .bar h2{font-family:var(--scrawl);font-weight:400;font-size:20px;text-align:left}
+.m-analog .x{border-radius:50%;border-width:1px}
+.datestamp{display:inline-block;margin:4px 0 10px;padding:2px 8px;border:2px solid var(--marker);color:var(--marker);font-family:var(--mono);font-size:13px;letter-spacing:.12em;transform:rotate(-3deg)}
+.m-analog .clock{border-radius:50%;width:180px;height:180px;padding:30px 0 0;background:var(--cream)}
+.m-analog .clock .face{width:70px;height:70px}.m-analog .digits{font-size:15px}
+.m-analog .clock .btn{margin-top:2px;padding:2px 8px;font-size:12px}
+.m-analog .chips a{background:var(--cream);font-family:var(--scrawl);font-weight:400}
+.m-analog .stamp{color:var(--marker)}
+/* ---------- phone: everything stacks, no sideways scroll ---------- */
+@media (max-width:640px){
+.desk{display:flex;flex-direction:column;gap:16px;padding:12px 14px;height:auto;min-height:0;overflow:visible;overflow-x:clip}
+.icons,.notes,.clock,.trash-slot,.windows{position:static}
+.windows{display:contents}
+.win{position:relative;left:auto!important;top:auto!important;width:auto!important;max-width:none;order:4}
+.win.welcome{order:1}.icons{order:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));justify-items:center}
+.clock{order:3;width:auto}.notes{order:5;width:auto;justify-content:center}.trash-slot{order:6;align-self:center}
+.m-analog .clock{width:180px;align-self:center}.note{width:calc(50% - 7px)}
+.stamp{display:none}.wbody{max-height:none}.bar{cursor:default}
+}
+@media (prefers-reduced-motion:reduce){.marquee span{animation:none;padding-left:0}.cursor{animation:none}}
+</style>
+</head>
+<body>
+<noscript><p class="oops">This desktop needs JavaScript switched on to open its windows.</p></noscript>
+<script>
+(function () {
+  "use strict";
+  var MOTIFS = ["analog", "cyberpunk", "y2k-blog"];
+  var ALIASES = {"guest-check": "analog", "front-page": "analog", "magazine-scrawl": "analog", "pink-paper": "analog",
+    "rotary": "analog", "leopard": "analog", "neutral": "analog", "retro-tv": "cyberpunk", "sticker-collage": "y2k-blog",
+    "y2k": "y2k-blog", "blog": "y2k-blog"};
+  var COLOUR = /^#[0-9a-fA-F]{3,8}$/, FONT = /^[A-Za-z0-9 ]{1,40}$/;
+  var PALETTE = {hero: "--ground", wine: "--wine", accent: "--candy", paper: "--cream", paper_pink: "--blush", ink: "--ink",
+    marker: "--marker", plum: "--plum", gold: "--gold"};
+  var FONTS = {masthead: ["--display", "Georgia,serif", "wght@400;900"], label: ["--label", "system-ui,Arial,sans-serif", "wght@400;800"],
+    body: ["--body", "Georgia,serif", ""], scrawl: ["--scrawl", "cursive", ""], script: ["--script", "cursive", ""],
+    mono: ["--mono", "ui-monospace,Menlo,monospace", "wght@400;500"], pixel: ["--pixel", "ui-monospace,monospace", ""]};
+
+  function oops(msg) { document.body.appendChild(h("p", {"class": "oops", text: msg})); }
+  function readJSON(id) {
+    var el = document.getElementById(id);
+    try { return el ? (JSON.parse(el.textContent) || {}) : {}; }
+    catch (err) { oops("This desktop could not read its " + id + " block: " + err.message); return {}; }
+  }
+  var store = {
+    get: function (k) { try { return window.localStorage.getItem(k); } catch (err) { return null; } },
+    set: function (k, v) { try { window.localStorage.setItem(k, v); return true; } catch (err) { return false; } }
+  };
+  function str(v, max) { return typeof v === "string" ? v.trim().slice(0, max || 400) : ""; }
+  function safeUrl(u) { u = str(u, 2000); return /^(https?:\/\/|mailto:)[^\s"'<>]+$/i.test(u) ? u : ""; }
+  function list(v) { return Array.isArray(v) ? v : []; }
+  function h(tag, props, kids) {
+    var el = document.createElement(tag);
+    Object.keys(props || {}).forEach(function (k) {
+      if (k === "text") el.textContent = props[k]; else if (props[k] !== null && props[k] !== undefined) el.setAttribute(k, props[k]);
+    });
+    list(kids).forEach(function (c) { if (c) el.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return el;
+  }
+  function link(label, url, cls) { url = safeUrl(url); return url ? h("a", {href: url, "class": cls || null, rel: "noopener", target: "_blank", text: label}) : null; }
+  function pixHeart() {
+    var ns = "http://www.w3.org/2000/svg", s = document.createElementNS(ns, "svg"), p = document.createElementNS(ns, "path");
+    s.setAttribute("viewBox", "0 0 7 6"); s.setAttribute("width", "14"); s.setAttribute("height", "12"); s.setAttribute("class", "pix");
+    s.setAttribute("aria-hidden", "true"); s.setAttribute("shape-rendering", "crispEdges");
+    p.setAttribute("fill", "currentColor"); p.setAttribute("d", "M1 0h2v1h1V0h2v1h1v2H6v1H5v1H4v1H3V5H2V4H1V3H0V1h1z");
+    s.appendChild(p); return s;
+  }
+
+  var cfg = readJSON("desktop-config"), sty = readJSON("desktop-style"), meta = readJSON("desktop-meta");
+  var params = new URLSearchParams(window.location.search);
+  var motif = str(params.get("motif") || meta.motif || cfg.motif || "y2k-blog", 40).toLowerCase();
+  motif = ALIASES[motif] || motif; if (MOTIFS.indexOf(motif) < 0) motif = "y2k-blog";
+  document.body.className = "m-" + motif;
+
+  // style.json: palette and fonts re-tone every motif. Values are checked before they touch the page.
+  var root = document.documentElement, pal = sty.palette || {}, fonts = Object.assign({}, sty.fonts || {});
+  if (!str(fonts.pixel)) fonts.pixel = "Silkscreen";
+  Object.keys(PALETTE).forEach(function (k) { if (COLOUR.test(str(pal[k]))) root.style.setProperty(PALETTE[k], pal[k]); });
+  Object.keys(FONTS).forEach(function (k) {
+    var fam = str(fonts[k], 40); if (!FONT.test(fam)) return;
+    var f = FONTS[k], q = fam.replace(/ /g, "+");
+    root.style.setProperty(f[0], '"' + fam + '",' + f[1]);
+    if (f[2]) document.head.appendChild(h("link", {rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=" + q + ":" + f[2] + "&display=swap"}));
+    document.head.appendChild(h("link", {rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=" + q + "&display=swap"}));
+  });
+
+  var name = str(cfg.name, 60);
+  if (!name) { oops("This desktop has no name yet. Add \"name\" to desktop.config.json and build again."); return; }
+  document.title = name;
+  var slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 24) || "desktop";
+  var KEY = "desktop-core:" + slug + ":";
+  var desktopMode = window.matchMedia("(min-width: 641px)");
+  var built = str(meta.built, 10) || new Date().toISOString().slice(0, 10);
+
+  // ---------- frame ----------
+  var timeEl = h("span", {"class": "time", "aria-hidden": "true"});
+  var who = h("button", {"class": "who", type: "button", "aria-controls": "w-welcome", text: name});
+  var menubar = h("header", {"class": "menubar"}, [motif === "y2k-blog" ? pixHeart() : null, who]);
+  if (motif === "y2k-blog" && str(cfg.tagline)) menubar.appendChild(h("div", {"class": "marquee", "aria-hidden": "true"}, [h("span", {text: str(cfg.tagline)})]));
+  if (motif === "cyberpunk") menubar.appendChild(h("span", {text: "online"}));
+  menubar.appendChild(timeEl);
+  var desk = h("main", {"class": "desk", "aria-label": name + " desktop"}, [h("div", {"class": "wall", "aria-hidden": "true"})]);
+  var stampText = sty.lines && str(sty.lines.stamp, 24);
+  if (stampText) desk.appendChild(h("div", {"class": "stamp", "aria-hidden": "true", text: stampText}));
+  var icons = h("ul", {"class": "icons", "aria-label": "Desktop icons"});
+  var winLayer = h("div", {"class": "windows"});
+  desk.appendChild(icons); desk.appendChild(winLayer);
+  document.body.appendChild(menubar); document.body.appendChild(desk);
+
+  // ---------- windows ----------
+  var wins = {}, z = 20, count = 0;
+  function front(w) { z += 1; w.style.zIndex = z; }
+  function clampPos(w, x, y) {
+    var maxX = Math.max(8, desk.clientWidth - w.offsetWidth - 8), maxY = Math.max(8, desk.clientHeight - 60);
+    return [Math.round(Math.min(Math.max(8, x), maxX)), Math.round(Math.min(Math.max(8, y), maxY))];
+  }
+  function place(w, x, y, save) {
+    var p = clampPos(w, x, y); w.style.left = p[0] + "px"; w.style.top = p[1] + "px";
+    if (save) store.set(KEY + "pos:" + w.id, JSON.stringify(p));
+  }
+  function saved(w) {
+    var raw = store.get(KEY + "pos:" + w.id);
+    try { var p = raw ? JSON.parse(raw) : null; return Array.isArray(p) && p.length === 2 ? p : null; }
+    catch (err) { return null; }
+  }
+  function openWin(id, opener) {
+    var w = wins[id]; if (!w) return;
+    w.hidden = false; w.opener = opener || w.opener; front(w);
+    if (desktopMode.matches) { var p = saved(w) || w.home; place(w, p[0], p[1], false); }
+    if (opener) opener.setAttribute("aria-expanded", "true");
+    w.querySelector(".bar").focus({preventScroll: desktopMode.matches});
+    if (!desktopMode.matches && opener) w.scrollIntoView({block: "start"});
+  }
+  function closeWin(w) {
+    w.hidden = true;
+    if (w.opener) { w.opener.setAttribute("aria-expanded", "false"); w.opener.focus(); }
+  }
+  function makeWin(id, title, body, opt) {
+    opt = opt || {};
+    var tid = id + "-title", bar = h("div", {"class": "bar", tabindex: "0", "aria-label": title + ". Drag, or use the arrow keys, to move this window."});
+    if (motif === "y2k-blog") bar.appendChild(h("span", {"class": "lights", "aria-hidden": "true"}, [h("i"), h("i"), h("i")]));
+    if (motif === "cyberpunk") bar.appendChild(h("span", {"class": "leds", "aria-hidden": "true"}, [h("i"), h("i")]));
+    bar.appendChild(h("h2", {id: tid, text: motif === "cyberpunk" ? "~/" + title.toLowerCase() : title}));
+    var x = h("button", {"class": "x", type: "button", "aria-label": "Close " + title, text: "x"});
+    bar.appendChild(x);
+    var w = h("section", {"class": "win" + (opt.cls ? " " + opt.cls : ""), id: id, role: "dialog", "aria-labelledby": tid}, [bar]);
+    if (motif === "analog") { w.insertBefore(h("span", {"class": "tape l", "aria-hidden": "true"}), bar); w.appendChild(h("span", {"class": "tape r", "aria-hidden": "true"})); }
+    if (motif === "cyberpunk") w.appendChild(h("p", {"class": "prompt", "aria-hidden": "true"}, [slug + ":~$ open " + title.toLowerCase(), h("span", {"class": "cursor"})]));
+    w.appendChild(h("div", {"class": "wbody"}, body));
+    if (opt.width) w.style.width = opt.width + "px";
+    w.home = opt.home || [230 + count * 34, 40 + count * 28]; count += 1;
+    w.hidden = !opt.open;
+    x.addEventListener("click", function () { closeWin(w); });
+    w.addEventListener("pointerdown", function () { front(w); });
+    w.addEventListener("keydown", function (e) { if (e.key === "Escape") { e.preventDefault(); closeWin(w); } });
+    bar.addEventListener("keydown", function (e) {
+      var step = e.shiftKey ? 64 : 16, d = {ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step]}[e.key];
+      if (!d || !desktopMode.matches) return;
+      e.preventDefault(); place(w, w.offsetLeft + d[0], w.offsetTop + d[1], true);
+    });
+    bar.addEventListener("pointerdown", function (e) {
+      if (!desktopMode.matches || e.target.closest(".x") || e.button !== 0) return;
+      var dx = e.clientX - w.offsetLeft, dy = e.clientY - w.offsetTop;
+      bar.setPointerCapture(e.pointerId);
+      function move(ev) { place(w, ev.clientX - dx, ev.clientY - dy, false); }
+      function up() { bar.removeEventListener("pointermove", move); bar.removeEventListener("pointerup", up); place(w, w.offsetLeft, w.offsetTop, true); }
+      bar.addEventListener("pointermove", move); bar.addEventListener("pointerup", up);
+    });
+    winLayer.appendChild(w); wins[id] = w;
+    return w;
+  }
+  function addIcon(id, label, glyph, parent) {
+    var b = h("button", {"class": "icon", type: "button", "aria-controls": id, "aria-expanded": "false"}, [h("span", {"class": "glyph " + glyph, "aria-hidden": "true"}), h("span", {"class": "label", text: label})]);
+    b.addEventListener("click", function () { openWin(id, b); });
+    (parent || icons).appendChild(parent ? b : h("li", {}, [b]));
+    return b;
+  }
+
+  // ---------- welcome ----------
+  var welcome = [h("h1", {text: name})];
+  if (motif === "analog") welcome.push(h("span", {"class": "datestamp", text: new Date(built + "T12:00:00").toLocaleDateString("en-GB", {day: "2-digit", month: "short", year: "numeric"}).toUpperCase()}));
+  if (str(cfg.tagline)) welcome.push(h("p", {text: str(cfg.tagline)}));
+  if (str(cfg.mood, 80)) welcome.push(h("p", {"class": "mood", text: "mood: ✧ " + str(cfg.mood, 80)}));
+  var chips = h("ul", {"class": "chips"});
+  list(cfg.links).slice(0, 8).forEach(function (l) { var a = l && link(str(l.label, 40) || "link", l.url); if (a) chips.appendChild(h("li", {}, [a])); });
+  if (chips.children.length) welcome.push(chips);
+  makeWin("w-welcome", name, welcome, {open: true, cls: "welcome", home: [130 + 110, 24], width: 420});
+  who.addEventListener("click", function () { openWin("w-welcome", who); });
+
+  // ---------- folders (offers) ----------
+  list(cfg.folders).slice(0, 10).forEach(function (f, i) {
+    var label = str(f && f.name, 40); if (!label) return;
+    var body = [];
+    if (str(f.blurb)) body.push(h("p", {text: str(f.blurb)}));
+    var items = list(f.items).map(function (t) { return str(t, 120); }).filter(Boolean);
+    if (items.length) body.push(h("ul", {}, items.map(function (t) { return h("li", {text: t}); })));
+    var a = link(str(f.cta, 40) || "open", f.url, "btn"); if (a) body.push(a);
+    makeWin("w-folder-" + i, label, body);
+    addIcon("w-folder-" + i, label, "folder");
+  });
+
+  // ---------- currently ----------
+  var now = cfg.currently && typeof cfg.currently === "object" ? cfg.currently : {};
+  var rows = Object.keys(now).slice(0, 6).filter(function (k) { return str(now[k], 120); });
+  if (rows.length) {
+    var dl = h("dl", {"class": "now"});
+    rows.forEach(function (k) { dl.appendChild(h("dt", {text: str(k, 24)})); dl.appendChild(h("dd", {text: str(now[k], 120)})); });
+    makeWin("w-currently", "currently", [dl], {open: true, home: [690, 40], width: 280});
+    addIcon("w-currently", "currently", "book");
+  }
+
+  // ---------- guestbook ----------
+  var gb = link("sign my guestbook", cfg.guestbookUrl, "btn");
+  if (gb) { makeWin("w-guestbook", "guestbook", [h("p", {text: "Thank you for stopping by."}), gb], {width: 320}); addIcon("w-guestbook", "guestbook", "page"); }
+
+  // ---------- clock widget: books a call ----------
+  var clock = cfg.clock && typeof cfg.clock === "object" ? cfg.clock : {};
+  var hh = h("span", {"class": "hand h"}), mm = h("span", {"class": "hand m"}), digits = h("time", {"class": "digits"});
+  var widget = h("aside", {"class": "clock", "aria-label": "Clock"}, [h("div", {"class": "face", "aria-hidden": "true"}, [hh, mm]), digits]);
+  var book = link(str(clock.label, 40) || "book a call", clock.url, "btn");
+  if (book) widget.appendChild(book);
+  desk.insertBefore(widget, winLayer);
+  function tick() {
+    var d = new Date(), hr = d.getHours(), mi = d.getMinutes(), t = String(hr).padStart(2, "0") + ":" + String(mi).padStart(2, "0");
+    hh.style.transform = "rotate(" + ((hr % 12) * 30 + mi / 2) + "deg)"; mm.style.transform = "rotate(" + mi * 6 + "deg)";
+    digits.textContent = t; digits.setAttribute("datetime", t); timeEl.textContent = t;
+  }
+  tick(); window.setInterval(tick, 15000);
+
+  // ---------- sticky notes (testimonials) ----------
+  var notes = list(cfg.notes).slice(0, 6).filter(function (n) { return n && str(n.text); });
+  if (notes.length) {
+    var wrap = h("div", {"class": "notes", "aria-label": "Sticky notes"});
+    notes.forEach(function (n) {
+      wrap.appendChild(h("figure", {"class": "note"}, [h("blockquote", {text: str(n.text, 240)}), str(n.from, 60) ? h("figcaption", {text: str(n.from, 60)}) : null]));
+    });
+    desk.insertBefore(wrap, winLayer);
+  }
+
+  // ---------- trash: things I let go ----------
+  var gone = list(cfg.trash).map(function (t) { return str(t, 120); }).filter(Boolean).slice(0, 12);
+  if (gone.length) {
+    makeWin("w-trash", "Trash", [h("p", {text: "things I let go"}), h("ul", {"class": "let-go"}, gone.map(function (t) { return h("li", {text: t}); }))], {width: 320, home: [520, 300]});
+    var slot = h("div", {"class": "trash-slot"}); desk.insertBefore(slot, winLayer);
+    addIcon("w-trash", "Trash", "trash", slot);
+  }
+
+  // ---------- taskbar: links, visitor counter, last updated ----------
+  var visits = (parseInt(store.get(KEY + "visits"), 10) || 0) + 1; store.set(KEY + "visits", String(visits));
+  var start = Number.isInteger(cfg.counter) && cfg.counter >= 0 ? cfg.counter : 777;
+  var n = String(start + visits).padStart(6, "0"), shown = n.slice(0, 3) + "," + n.slice(3);
+  var counterText = motif === "y2k-blog" ? "you are visitor no. " + shown : motif === "cyberpunk" ? "visits " + n : "no. " + n;
+  var taskbar = h("footer", {"class": "taskbar"}, [h("span", {"class": "counter", text: counterText}), h("span", {"class": "updated", text: "last updated " + built})]);
+  taskbar.appendChild(h("a", {"class": "credit", href: "https://github.com/RochaStone/desktop-core", rel: "noopener", target: "_blank", text: "made with Rocha Coded"}));
+  document.body.appendChild(taskbar);
+
+  // Keep open windows on screen when the browser is resized.
+  window.addEventListener("resize", function () {
+    if (!desktopMode.matches) return;
+    Object.keys(wins).forEach(function (id) { var w = wins[id]; if (!w.hidden) place(w, w.offsetLeft, w.offsetTop, false); });
+  });
+  Object.keys(wins).forEach(function (id) { var w = wins[id]; if (!w.hidden && desktopMode.matches) { var p = saved(w) || w.home; place(w, p[0], p[1], false); front(w); } });
+  root.setAttribute("data-ready", motif);
+})();
+</script>
+</body>
+</html>

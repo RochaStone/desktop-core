@@ -1,0 +1,28 @@
+{
+  "name": "Juniper Lark",
+  "tagline": "Brand photography for ceramicists and small-batch makers. A fictional studio, for show.",
+  "mood": "glazing, quietly",
+  "motif": "y2k-blog",
+  "counter": 777,
+  "folders": [
+    { "name": "LORE", "blurb": "The story so far. Kilns, light, and the long way round.", "url": "https://example.com/lore", "cta": "read the lore" },
+    { "name": "The Shoot Day", "blurb": "One day in your studio. Forty finished images by the end of the week.", "items": ["half or full day", "styling included", "40 edited images"], "url": "https://example.com/shoot-day", "cta": "see the day" },
+    { "name": "Mini Sessions", "blurb": "Twenty minutes, one collection, a little stack of new photos.", "url": "https://example.com/minis", "cta": "save a spot" },
+    { "name": "Brand Library", "blurb": "A year of pictures for your shop, your posts and your press page.", "url": "https://example.com/library", "cta": "open the library" }
+  ],
+  "notes": [
+    { "text": "TO DO: BUILD YOUR FOUNDER WORLD" },
+    { "text": "My mugs finally look the way they feel in your hand.", "from": "Odile, fictional potter" },
+    { "text": "Sold out the spring drop in two days.", "from": "Bram, fictional glassblower" },
+    { "text": "She made my tiny studio look like a cathedral.", "from": "Mei, fictional weaver" }
+  ],
+  "clock": { "label": "book a call", "url": "https://example.com/book" },
+  "trash": ["shooting on white for everyone", "the 6am inbox", "saying yes to weddings", "apologising for my prices"],
+  "currently": { "reading": "a book about kilns", "listening": "rain on the studio roof", "building": "the autumn lookbook" },
+  "links": [
+    { "label": "instagram", "url": "https://example.com/instagram" },
+    { "label": "newsletter", "url": "https://example.com/letters" },
+    { "label": "shop prints", "url": "https://example.com/prints" }
+  ],
+  "guestbookUrl": "https://example.com/guestbook"
+}
