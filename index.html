@@ -41,7 +41,7 @@ a{color:inherit}button{font:inherit;color:inherit}
 .hand.h{height:26px;margin-left:-1.5px}.hand.m{height:38px;width:2px;margin-left:-1px}
 .digits{font-family:var(--mono);font-size:22px;display:block}
 .btn{display:inline-block;margin-top:8px;padding:6px 12px;font-weight:800;text-decoration:none;background:var(--candy);color:var(--ink);border:2px solid var(--ink);border-radius:999px}
-.notes{position:absolute;right:20px;top:220px;z-index:2;width:300px;display:flex;flex-wrap:wrap;gap:14px;margin:0}
+.notes{position:absolute;right:20px;top:276px;z-index:2;width:300px;display:flex;flex-wrap:wrap;gap:14px;margin:0}
 .note{width:140px;min-height:120px;margin:0;padding:12px 10px;background:var(--blush);color:var(--ink);box-shadow:var(--shadow);font-family:var(--scrawl);font-size:15px;line-height:1.25;overflow-wrap:anywhere}
 .note:nth-child(odd){transform:rotate(-2.5deg)}.note:nth-child(even){transform:rotate(2deg);background:var(--cream)}
 .note blockquote{margin:0}.note figcaption{margin-top:8px;font-family:var(--mono);font-size:11px}
@@ -120,6 +120,7 @@ dl.now{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0}dl.now 
 .m-analog .chips a{background:var(--cream);font-family:var(--scrawl);font-weight:400}
 .m-analog .stamp{color:var(--marker)}
 /* ---------- phone: everything stacks, no sideways scroll ---------- */
+@media (max-width:700px){.marquee{display:none}}
 @media (max-width:640px){
 .desk{display:flex;flex-direction:column;gap:16px;padding:12px 14px;height:auto;min-height:0;overflow:visible;overflow-x:clip}
 .icons,.notes,.clock,.trash-slot,.windows{position:static}
